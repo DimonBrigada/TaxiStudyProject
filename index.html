@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>ttt</title>
+  </head>
+  <body>
+    <video loop="" muted="" autoplay="" poster="video/plane.jpg" class="fullscreen-bg__video">
+      <source src="tax.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <h1 class="header">ГРУЗО/ПАССАЖИРО ПЕРЕВОЗКИ</h1>
+      <div class="container-col">
+        <div class="first-col">
+          <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <label for="firstname" class="placeholder">Ваше имя</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <label for="lastname" class="placeholder">E-mail</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " />
+            <label for="email" class="placeholder">Номер телефона</label>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <label for="firstname" class="placeholder">Откуда(Адрес подачи авто)</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <label for="lastname" class="placeholder">Куда</label>
+          </div>
+        </div>
+      </div>
+      <span class="focus-border">
+        <div class="tabs">
+          <div class="tabs__nav tabs-nav">
+            <button class="tabs-nav__item is-active" data-tab-name="tab-1">Легковой</button>
+            <button class="tabs-nav__item" data-tab-name="tab-2">Грузовой</button>
+        </div>
+        <div class="tabs__content">
+          <div class="tab is-active tab-1"> 
+            <h3 class="tab-header">Легковое такси. Вместимость до 4 человек</h3>
+            <form class="form cf">
+              <div class="plan cf">
+                <input type="radio" name="radio1" id="free" value="free"><label class="free-label four col" for="free">Эконом</label>
+                <input type="radio" name="radio1" id="basic" value="basic" checked><label class="basic-label four col" for="basic">Комфорт</label>
+                <input type="radio" name="radio1" id="premium" value="premium"><label class="premium-label four col" for="premium">Люкс</label>
+              </div>
+            </form>
+            <label for="cbx" class="label-cbx">
+              <input id="cbx" type="checkbox" class="invisible">
+              <span>Детское кресло</span>
+            </label>
+            <textarea autocomplete="off" placeholder="Комментарий"></textarea>
+            </div>
+          <div class="tab tab-2">
+            <h3 class="tab-header">Грузовые перевозки</h3>
+            <form class="form cf">
+              <div class="plan cf">
+                <input type="radio" name="radio1" id="lite" value="lite"><label class="lite-label four col" for="lite">До 3.5 тонн</label>
+                <input type="radio" name="radio1" id="hard" value="hard" checked><label class="hard-label four col" for="hard">До 15a тонн</label>
+              </div>
+            </form>
+            <textarea autocomplete="off" placeholder="Комментарий"></textarea>
+          </div>
+        </div>
+      </div>
+    </span>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
